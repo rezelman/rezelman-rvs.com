@@ -1,0 +1,12 @@
+<div class="gallery">
+  {% assign items = include.items | sort: 'order' %}
+  {% for item in items %}
+  <figure>
+    <img src="{{ item.path | replace: '_', '' | replace: '.md','.jpg' }}" alt="{{ item.title }}" />
+    <figcaption>
+      <h2>{{ item.title }}</h2>
+      {{ item.content | markdownify }}
+    </figcaption>
+  </figure>
+  {% endfor %}
+</div>

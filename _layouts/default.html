@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <title>{{ site.title }} - {{ page.title }}</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="google-site-verification" content="2KLjugDdEabWoGPo0razviRsZG2A2-OOBC5nlH0I6Dc" />
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; minimum-scale=1;" />
+
+    <link rel="stylesheet" href="/assets/style.css" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="/" title="Home"><img src="/assets/logo.png" alt="Logo" /></a>
+      <h1>
+        {{ site.title }}<span> &middot; Roestvrijstaal &amp; Aluminium</span>
+        <small>Constructies en Reparaties</small>
+      </h1>
+    </header>
+
+    <nav>
+      <ul>
+        {% assign navigation_pages = site.html_pages | where_exp: "i", "i.order != nil" | sort: 'order' %}
+        {% for item in navigation_pages %}
+        <li class="{% if page.url == item.url %}active{% endif %}">
+          <a href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <main>{{ content }}</main>
+
+    <footer>
+      <a href="tel:{{ site.contact_phone_uri }}"><span itemprop="tel">{{ site.contact_phone }}</span></a>
+      &bull;
+      <span itemscope itemtype="http://data-vocabulary.org/Address">
+        <span itemprop="street-address">{{ site.contact_address }}</span>
+        <span itemprop="postal-code">{{ site.contact_postalcode }}</span>,
+        <span itemprop="locality">{{ site.contact_city }}</span>
+      </span>
+      &bull;
+      <a href="mailto:{{ contact_email }}">{{ site.contact_email }}</a>
+    </footer>
+
+    <div class="header-bg"></div>
+    <div class="nav-bg"></div>
+    <div class="footer-bg"></div>
+    <div class="subfooter"></div>
+  </body>
+</html>

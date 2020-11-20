@@ -1,0 +1,32 @@
+title: Rezelman RVS
+description: |
+  Rezelman RVS levert maatwerk op het gebied van roestvrijstaal en aluminium.
+  We richten ons op kleinschalige projecten, zijn gespecialiseerd in jachtbeslag, motorfietsen en framebouw.
+
+contact_address: Berenkoog 78
+contact_postalcode: 1822BZ
+contact_city: Alkmaar
+contact_phone: "+31 (0)72 515 82 26"
+contact_phone_uri: "+31725158226"
+contact_mobile_phone: "+31 (0)6 55 56 49 18"
+contact_mobile_phone_uri: "+31655564918"
+contact_email: info@rezelman-rvs.com
+
+collections:
+  - boatfittings
+  - disciplines
+  - interiorexterior
+  - miscellaneous
+  - motorcycles
+
+defaults:
+  - values:
+      layout: "default"
+
+# Build settings
+permalink: pretty
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
