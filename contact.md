@@ -13,13 +13,14 @@ order: 99
 
 <span itemprop="name">Rezelman RVS</span><br>
 <span itemprop="address" itemscope="" itemtype="http://data-vocabulary.org/Address">
-<span itemprop="street-address">Berenkoog 78</span><br>
+<span itemprop="street-address">{{ site.contact_address }}</span><br>
 <span class="nobr">
-<span itemprop="postal-code">1822BZ</span> <span itemprop="locality">Alkmaar</span></span>
+<span itemprop="postal-code">{{ site.contact_postalcode }}</span> <span itemprop="locality">{{ site.contact_city }}</span></span>
 </span>
 
-> ### Wij verhuizen
-> Met ingang van 1 april 2021 hebben wij een nieuw adres: **Hazenkoog 24D, 1822BZ Alkmaar**.
+> ### Wij zijn verhuisd
+>
+> Met ingang van 1 april 2021 hebben wij een nieuw adres: **{{ site.contact_address }}, {{ site.contact_postalcode }} {{ site.contact_city }}**.
 
 ## Contact
 

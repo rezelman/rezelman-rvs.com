@@ -24,8 +24,8 @@
 
     <nav>
       <ul>
-        {% assign navigation_pages = site.html_pages | where_exp: "i", "i.order != nil" | sort: 'order' %}
-        {% for item in navigation_pages %}
+        {% assign navigation_pages = site.html_pages | where_exp: "i", "i.order != nil" | sort: 'order' %} {% for item
+        in navigation_pages %}
         <li class="{% if page.url == item.url %}active{% endif %}">
           <a href="{{ item.url }}">{{ item.title }}</a>
         </li>

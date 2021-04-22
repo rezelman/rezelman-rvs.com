@@ -20,8 +20,9 @@ order: 1
   </figure>
 </aside>
 
-> ### Wij verhuizen
-> Met ingang van 1 april 2021 hebben wij een nieuw adres: **Hazenkoog 24D, 1822BZ Alkmaar**.
+> ### Wij zijn verhuisd
+>
+> Met ingang van 1 april 2021 hebben wij een nieuw adres: **{{ site.contact_address }}, {{ site.contact_postalcode }} {{ site.contact_city }}**.
 
 Rezelman RVS & Aluminium legt zich al vele jaren toe op het leveren van maatwerk in zowel de
 [scheeps­bouw]({% link boatfittings.md %}),
