@@ -20,10 +20,6 @@ order: 1
   </figure>
 </aside>
 
-> ### Wij zijn verhuisd
->
-> Met ingang van 1 april 2021 hebben wij een nieuw adres: **{{ site.contact_address }}, {{ site.contact_postalcode }} {{ site.contact_city }}**.
-
 Rezelman RVS & Aluminium legt zich al vele jaren toe op het leveren van maatwerk in zowel de
 [scheeps­bouw]({% link boatfittings.md %}),
 [meubilair]({% link interiorexterior.md %}), als
@@ -34,7 +30,7 @@ Sinds 1991 streven wij ernaar te voldoen aan al uw wensen op het gebied van roes
 
 U kunt voor materialen en reparaties bij ons terecht. Wanneer nodig voeren wij reparaties en installaties op locatie uit.
 
-U bent van harte welkom in onze werkplaats aan de Berenkoog 78 in Alkmaar.
+U bent van harte welkom in onze werkplaats aan de {{ site.contact_address }} in {{ site.contact_city }}.
 
 Wij voeren onder andere de volgende [werkzaamheden]({% link disciplines.md %}) uit:
 
