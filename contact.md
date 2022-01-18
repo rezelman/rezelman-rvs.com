@@ -18,10 +18,6 @@ order: 99
 <span itemprop="postal-code">{{ site.contact_postalcode }}</span> <span itemprop="locality">{{ site.contact_city }}</span></span>
 </span>
 
-> ### Wij zijn verhuisd
->
-> Met ingang van 1 april 2021 hebben wij een nieuw adres: **{{ site.contact_address }}, {{ site.contact_postalcode }} {{ site.contact_city }}**.
-
 ## Contact
 
 <a href="tel:+31725158226"><span itemprop="tel">+31 (0)72 515 82 26</span></a><br>
