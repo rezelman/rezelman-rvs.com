@@ -1,7 +1,7 @@
 ---
 title: Interieur/Exterieur
 order: 3
-permalink: interieurexterieur
+permalink: /interieurexterieur/
 ---
 
 Creativiteit en innovatie komen volledig tot hun recht in de meest uiteen­lopende projecten. Deze variëren van een op maat gemaakte RVS wentel­trap tot zelf ontworpen tuin­haard. Stoere eettafels, unieke tuinsetten, of bijzondere accessoires; alles kan ontworpen en uitgevoerd worden! Oude industriële onderdelen vormen een geweldige inspiratie voor hedendaags meubilair. Liever wat strakker? Een gepolijst frame in combinatie met ruw hout of een glazen blad levert een gaaf eind­resultaat.

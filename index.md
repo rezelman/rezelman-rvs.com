@@ -4,20 +4,16 @@ order: 1
 ---
 
 <aside>
-  <figure>
-    <img src="assets/frontpage0.jpg" id="frontpage" />
-  </figure>
+  <img src="{{ 'assets/frontpage0.jpg' | relative_url }}" id="frontpage" />
 </aside>
 
 <aside>
-  <figure>
-    <figcaption>
-      <a href="https://www.metaalunie.nl/" class="metaalunie img-thumbnail" target="_blank" title="Naar de website van de Koninklijke Metaalunie">
-        <img src="assets/metaalunie.png" style="float: right;" />
-        Lid van de Koninklijke Metaalunie.
-      </a>
-    </figcaption>
-  </figure>
+  <a href="https://www.metaalunie.nl/" target="_blank" 
+    title="Naar de website van de Koninklijke Metaalunie" 
+    style="padding:0.3em;display:flex;gap:0.8em;align-items:center;flex-wrap:wrap;">
+    <img src="{{ 'assets/metaalunie.svg' | relative_url }}" style="width:25%;min-width:2em;" />
+    <span style="flex: 1">Lid van de Koninklijke Metaal&shy;unie</span>
+  </a>
 </aside>
 
 Rezelman RVS & Aluminium legt zich al vele jaren toe op het leveren van maatwerk in zowel de

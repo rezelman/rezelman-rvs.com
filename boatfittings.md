@@ -1,7 +1,7 @@
 ---
 title: Jachtbeslag
 order: 2
-permalink: jachtbeslag
+permalink: /jachtbeslag/
 ---
 
 Van nieuwe boegs­chroef tot op maat gemaakte preek­stoelen en complete revisie van de aandrijving.Als het om uw zeil- of

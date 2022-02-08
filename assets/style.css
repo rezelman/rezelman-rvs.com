@@ -1,0 +1,220 @@
+:root {
+  --link-color: #337ab7;
+  --border-color: #b3b3b3;
+  --page-bg: #f7f7f7;
+  --main-color: #333;
+  --main-bg: #fff;
+  --header-bg: #036;
+  --header-color: #fff;
+  --menu-bg: #e7e7e7;
+  --aside-bg: #f7f7f7;
+  --side-gutter-width: max(0.5em, 50vw - 600px);
+  --border-radius: 0.3em;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-bg: #000;
+    --main-bg: #333;
+    --main-color: #f7f7f7;
+    --menu-bg: #444;
+    --aside-bg: #222;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+img {
+  display: block;
+}
+body {
+  font-size: 120%;
+  font-family: Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;
+  background-color: var(--page-bg);
+  color: var(--main-color);
+}
+body > header,
+body > footer {
+  padding: 0.3em var(--side-gutter-width);
+  background-color: var(--header-bg);
+  color: var(--header-color);
+  line-height: 1.2;
+}
+body > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body > header > img {
+  max-width: 22vw;
+  max-height: 5em;
+}
+body > header > h1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  column-gap: 0.5em;
+  margin: 0;
+  padding: 0;
+  font-size: 180%;
+  font-weight: normal;
+  line-height: 1.2;
+}
+body > header > * {
+  white-space: nowrap;
+}
+body > nav {
+  padding: 0.3em var(--side-gutter-width);
+  background-color: var(--menu-bg);
+  border-bottom: 0.1em solid var(--border-color);
+  line-height: 1.2;
+  text-align: center;
+  font-weight: bold;
+}
+body > nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.2em;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+body > nav ul li,
+body > nav ul li:hover {
+  display: inline;
+  padding: 0.2em 0.2em 0.1em 0.2em;
+  border-radius: var(--border-radius);
+}
+body > nav ul li.active {
+  background: var(--border-color);
+}
+body > nav ul li.active a {
+  color: #000;
+  text-decoration: none;
+}
+
+body > footer + div,
+body > main {
+  margin: 0 var(--side-gutter-width);
+  background-color: var(--main-bg);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  padding: 1em;
+}
+body > main h1,
+body > main h2,
+body > main h3,
+body > main p,
+body > main ul,
+body > main ol,
+body > main dl {
+  margin: 0 0 1em 0;
+}
+body > main > p {
+  line-height: 1.43;
+}
+body > main aside {
+  float: right;
+  clear: right;
+  width: 22%;
+  margin-left: 0.8em;
+  margin-bottom: 0.8em;
+}
+body > main ul {
+  columns: 12em 3;
+  column-gap: 1em;
+}
+body > main dl {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  column-gap: 1em;
+}
+body > main dl dt {
+  grid-column: 1;
+}
+body > main dl dd {
+  grid-column: 2;
+  margin: 0;
+}
+body > footer {
+  text-align: center;
+  line-height: 1.2;
+}
+body > footer a,
+body > footer a:hover {
+  color: #fff;
+}
+body > footer + div {
+  padding: 0.4em;
+  border-bottom: 1px solid var(--border-color);
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  margin-bottom: 0.8em;
+}
+div.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1em;
+}
+aside,
+figure {
+  background-color: var(--aside-bg);
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  margin: 0;
+  border-radius: var(--border-radius);
+}
+figure > img,
+aside > img {
+  width: 100%;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+figure > img:last-child,
+aside > img:last-child {
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+figure figcaption {
+  padding: 0.6em 0.5em 0.3em 0.5em;
+}
+figure figcaption h2 {
+  display: inline;
+  color: var(--link-color);
+  margin: 0;
+  font-size: 100%;
+}
+figure figcaption p {
+  display: inline;
+}
+blockquote {
+  border-left: 1em solid #e7e7e7;
+  margin: 0 0 1em 1em;
+  padding: 0.2em 0.2em 0.2em 1em;
+  background-color: #f7f7f7;
+}
+
+@media (max-width: 930px) {
+  header > h1 > small {
+    display: none;
+  }
+  header > h1 > :not(:first-child) {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 715px) {
+  body > header > h1 {
+    font-size: 140%;
+  }
+}

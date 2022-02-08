@@ -1,7 +1,7 @@
 ---
 title: Motoren
 order: 4
-permalink: motoren
+permalink: /motoren/
 ---
 
 Een uit de hand gelopen hobby is het niet meer te noemen. Vanuit de liefde voor met name Moto Guzzi, maar ook aller­hande choppers, toer­motoren en antieke racers, is de hobby nu onderdeel van het bedrijf.
