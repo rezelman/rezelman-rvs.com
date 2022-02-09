@@ -1,9 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1770" height="834" class="svg">
   <defs>
-    <path id="r" style="fill:#fff;stroke:#000;stroke-width:3;stroke-linejoin:round" d="m3.6 1.5 368.7 365.3-54.8 210h70.2L428 422.1l414.4 410.6h74L482.3 402.4l197-.2A201.4 201.4 0 0 0 881.7 202 201.3 201.3 0 0 0 679.4 1.5Zm161.6 86.6h514.2C744.7 88.1 795 138.5 795 202c0 63.3-50.3 113.6-115.6 113.6H455.9l55-210.7h-70.1l-53.3 203.7zm288.7 235h10.2l-9.9 37.6 34 33.8h-13.9l-31-30.7z"/>
+    <path id="r" d="m4 2 368 365-54 210h70l40-155 414 411h74L482 402h197a201 201 0 0 0 203-200A201 201 0 0 0 679 2Zm161 86h514a114 114 0 1 1 0 228H456l55-211h-70l-54 204zm289 235h10l-10 38 34 34h-14l-31-31z" style="fill:#fff;stroke:#000;stroke-width:3;stroke-linejoin:round"/>
   </defs>
   <use xlink:href="#r"/>
   <use xlink:href="#r" x="850"/>
 </svg>
-
