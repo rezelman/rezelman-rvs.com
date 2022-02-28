@@ -93,7 +93,7 @@ body > nav ul {
 body > nav ul li,
 body > nav ul li:hover {
   display: inline;
-  padding: 0.2em 0.2em 0.1em 0.2em;
+  padding: 0.1em 0.3em 0.3em 0.3em;
   border-radius: var(--border-radius);
 }
 body > nav ul li.active {
