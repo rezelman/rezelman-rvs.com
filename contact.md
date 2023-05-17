@@ -20,9 +20,8 @@ order: 99
 
 ## Contact
 
-<a href="tel:+31725158226"><span itemprop="tel">+31 (0)72 515 82 26</span></a><br>
-<a href="tel:+31655564918"><span itemprop="tel">+31 (0)6 55 56 49 18</span></a><br>
-<a href="mailto:info@rezelman-rvs.com">info@rezelman-rvs.com</a>
+<a href="tel:{{ site.contact_phone_uri }}"><span itemprop="tel">{{ site.contact_phone }}</span></a><br>
+<a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>
 
 ## Bedrijfsgegevens
 

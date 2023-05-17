@@ -6,10 +6,10 @@ description: |
 contact_address: Hazenkoog 24 D
 contact_postalcode: 1822BS
 contact_city: Alkmaar
-contact_phone: +31 (0)72 515 82 26
-contact_phone_uri: +31725158226
-contact_mobile_phone: +31 (0)6 55 56 49 18
-contact_mobile_phone_uri: +31655564918
+#contact_phone: +31 (0)72 515 82 26
+#contact_phone_uri: +31725158226
+contact_phone: +31 (0)6 55 56 49 18
+contact_phone_uri: +31655564918
 contact_email: info@rezelman-rvs.com
 
 collections:
